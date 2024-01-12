@@ -1,0 +1,11 @@
+USR101:{"userId": "USR101","createdTime": "2019-02-05T10:01:00.00Z","currentLink": "NULL","nextLink": "Home"}
+USR101:{"userId": "USR101","createdTime": "2019-02-05T10:04:00.00Z","currentLink": "Home","nextLink": "Books"}
+USR101:{"userId": "USR101","createdTime": "2019-02-05T10:10:00.00Z","currentLink": "Books","nextLink": "Kafka"}
+
+
+USR102:{"userId": "USR102","createdTime": "2019-02-05T10:02:00.00Z","currentLink": "NULL","nextLink": "Home"}
+USR102:{"userId": "USR102","createdTime": "2019-02-05T10:10:00.00Z","currentLink": "Home","nextLink": "Courses"}
+
+
+USR101:{"userId": "USR101","createdTime": "2019-02-05T10:07:00.00Z","currentLink": "Kafka","nextLink": "Preview"}
+USR101:{"userId": "USR101","createdTime": "2019-02-05T10:19:00.00Z","currentLink": "Preview","nextLink": "Buy"}

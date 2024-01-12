@@ -1,0 +1,22 @@
+1001:{"inventoryId": "1001", "newsType": "Sports"}
+1002:{"inventoryId": "1002", "newsType": "Politics"}
+1003:{"inventoryId": "1003", "newsType": "LocalNews"}
+1004:{"inventoryId": "1004", "newsType": "WorldNews"}
+1005:{"inventoryId": "1005", "newsType": "Health"}
+1006:{"inventoryId": "1006", "newsType": "Lifestyle"}
+1007:{"inventoryId": "1007", "newsType": "Literature"}
+1008:{"inventoryId": "1008", "newsType": "Education"}
+1009:{"inventoryId": "1009", "newsType": "Social"}
+1010:{"inventoryId": "1010", "newsType": "Business"}
+
+
+1001:{"inventoryId": "1001"}
+1002:{"inventoryId": "1002"}
+1003:{"inventoryId": "1003"}
+1001:{"inventoryId": "1001"}
+1003:{"inventoryId": "1003"}
+1005:{"inventoryId": "1005"}
+1002:{"inventoryId": "1002"}
+1001:{"inventoryId": "1001"}
+1003:{"inventoryId": "1003"}
+1003:{"inventoryId": "1003"}

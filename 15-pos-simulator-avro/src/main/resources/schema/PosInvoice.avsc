@@ -1,0 +1,24 @@
+{
+  "namespace": "guru.learningjournal.kafka.examples.model",
+  "type": "record",
+  "name": "PosInvoice",
+  "fields": [
+    {"name": "invoiceNumber","type": ["null","string"]},
+    {"name": "createdTime","type": ["null","long"]},
+    {"name": "customerCardNo","type": ["null","string"]},
+    {"name": "totalAmount","type": ["null","double"]},
+    {"name": "numberOfItems","type": ["null","int"]},
+    {"name": "paymentMethod","type": ["null","string"]},
+    {"name": "taxableAmount","type": ["null","double"]},
+    {"name": "cgst","type": ["null","double"]},
+    {"name": "sgst","type": ["null","double"]},
+    {"name": "cess","type": ["null","double"]},
+    {"name": "storeId","type": ["null","string"]},
+    {"name": "posId","type": ["null","string"]},
+    {"name": "cashierId","type": ["null","string"]},
+    {"name": "customerType","type": ["null","string"]},
+    {"name": "deliveryType","type": ["null","string"]},
+    {"name": "deliveryAddress","type": ["null","DeliveryAddress"]},
+    {"name": "invoiceLineItems","type": {"type": "array", "items": "LineItem"}}
+  ]
+}

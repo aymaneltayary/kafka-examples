@@ -1,0 +1,14 @@
+1-Create KFKA topic:
+kafka-topics --create  --topic order --partitions 3 --replication-factor 1  --bootstrap-server localhost:9092  --config segment.bytes=1000000
+
+2-Describe a topic: 
+kafka-topics  --describe   --topic pos --bootstrap-server localhost:9092
+
+3-Delete topic
+kafka-topics --delete  --topic department --bootstrap-server localhost:9092
+
+4-consume message from a topic: 
+kafka-console-consumer --bootstrap-server localhost:9092 --topic streaming-table-kt01-store-changelog --from-beginning
+
+5-produce messge to a topic
+kafka-console-producer  --broker-list localhost:9092 --topic stock-tick --property parse.key=true --property key.separator=":"

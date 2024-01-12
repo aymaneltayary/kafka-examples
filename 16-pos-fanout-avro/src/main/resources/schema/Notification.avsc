@@ -1,0 +1,10 @@
+{"namespace": "guru.learningjournal.kafka.examples.model",
+  "type": "record",
+  "name": "Notification",
+  "fields": [
+    {"name": "invoiceNumber", "type": ["null", "string"]},
+    {"name": "customerCardNo",  "type":["null", "string"]},
+    {"name": "totalAmount",  "type": ["null", "double"]},
+    {"name": "earnedLoyaltyPoints",  "type": ["null", "double"]}
+  ]
+}
