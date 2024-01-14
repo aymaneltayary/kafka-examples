@@ -1,9 +1,6 @@
 package guru.learningjournal.kafka.examples;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.learningjournal.kafka.examples.datagenerator.InvoiceGenerator;
-import guru.learningjournal.kafka.examples.model.DeliveryAddress;
-import guru.learningjournal.kafka.examples.model.LineItem;
 import guru.learningjournal.kafka.examples.model.Notification;
 import guru.learningjournal.kafka.examples.model.PosInvoice;
 import guru.learningjournal.kafka.examples.serde.AppSerdes;
@@ -12,7 +9,6 @@ import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.TestInputTopic;
 import org.apache.kafka.streams.TestOutputTopic;
 import org.apache.kafka.streams.TopologyTestDriver;
-import org.apache.kafka.streams.processor.StateStore;
 import org.apache.kafka.streams.state.KeyValueStore;
 import org.apache.kafka.streams.test.TestRecord;
 import org.junit.jupiter.api.AfterEach;
@@ -21,13 +17,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
-
-import guru.learningjournal.kafka.examples.datagenerator.*;
 
 public class RewardTopologyTest {
 
