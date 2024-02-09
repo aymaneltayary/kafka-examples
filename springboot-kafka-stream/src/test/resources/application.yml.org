@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: kafka-stream
+  kafka:
+    streams:
+      application-id: springboot-kafka-stream-test
+    bootstrap-servers:
+      - localhost:9092
+    properties:
+      default:
+        key:
+          serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        value:
+          serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+
+logging:
+  level:
+    root: info
+  file:
+    name: log/kafka-stream.log
+  pattern:
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS, Australia/Sydney} %-5level  - %msg%n'
+  logback:
+    rollingpolicy:
+      file-name-pattern: 'log/kafka-stream.log.%d{yyyy-MM-dd, Australia/Sydney}.%i.log'
+      max-file-size: 1MB
+      max-history: 60
